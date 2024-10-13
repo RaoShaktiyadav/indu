@@ -7,7 +7,6 @@ import Services from './compound/Services';
 import About from './compound/About';
 import Contact from './compound/Contact';
 import FAQ from './compound/FAQ';
-import Estimate from './compound/Estimate';
 
 
 
