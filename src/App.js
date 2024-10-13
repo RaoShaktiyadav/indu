@@ -22,7 +22,7 @@ const App = () => {
       <div>
       <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/"><img src={logo} /></Link>
+        <Link to="/"><img src={logo} alt="logo" /></Link>
       </div>
       <button className="navbar-toggle" onClick={toggleMenu}>
         <span className="toggle-icon">&#9776;</span>

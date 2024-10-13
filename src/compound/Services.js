@@ -93,7 +93,7 @@ const Services = () => {
         </div>
         <div className="stat-box hos">
           <div>
-          <img src={si1} />
+          <img src={si1} alt='i' />
           </div>
           <div>
           <h3>28</h3>
@@ -102,7 +102,7 @@ const Services = () => {
         </div>
         <div className="stat-box bad">
         <div>
-          <img src={si2} />
+          <img src={si2} alt='i'  />
           </div>
           <div>
           <h3>4,500+</h3>
@@ -111,7 +111,7 @@ const Services = () => {
         </div>
         <div className="stat-box doc">
         <div>
-          <img src={si3} />
+          <img src={si3} alt='i'  />
           </div>
           <div>
           <h3>12,500+</h3>
