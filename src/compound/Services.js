@@ -27,26 +27,26 @@ const ServiceCard = ({ name, description, icon }) => (
 
 
 const Services = () => {
-  const packages = [
-    {
-      title: "Basic Health Checkup",
-      description: "Includes blood tests, ECG, and consultation.",
-      price: "$150",
-      image: "/images/basic-checkup.png"
-    },
-    {
-      title: "Advanced Health Checkup",
-      description: "Includes MRI, CT scan, and full blood work.",
-      price: "$300",
-      image: "/images/advanced-checkup.png"
-    },
-    {
-      title: "Heart Care Package",
-      description: "Includes ECG, Echo, and a cardiologist consultation.",
-      price: "$400",
-      image: "/images/heart-checkup.png"
-    },
-  ];
+  // const packages = [
+  //   {
+  //     title: "Basic Health Checkup",
+  //     description: "Includes blood tests, ECG, and consultation.",
+  //     price: "$150",
+  //     image: "/images/basic-checkup.png"
+  //   },
+  //   {
+  //     title: "Advanced Health Checkup",
+  //     description: "Includes MRI, CT scan, and full blood work.",
+  //     price: "$300",
+  //     image: "/images/advanced-checkup.png"
+  //   },
+  //   {
+  //     title: "Heart Care Package",
+  //     description: "Includes ECG, Echo, and a cardiologist consultation.",
+  //     price: "$400",
+  //     image: "/images/heart-checkup.png"
+  //   },
+  // ];
    
   const [appointment, setAppointment] = useState({
     name: '',
