@@ -83,4 +83,106 @@
       width: 100%;
     }
   }
-  
+  /* Reset and Box Model */
+/* Reset and Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Contact Section Styling */
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+    url('https://www.fortishealthcare.com/drupal-data/styles/banner_image/azblob/2023-03/Rectangle%20626%20copy%203%402x.png?itok=sR3yxEnr');
+  background-size: cover;
+  height: 300px;
+  flex-wrap: wrap; /* Make the section wrap on smaller screens */
+  gap: 20px; /* Adds space between wrapped elements */
+}
+
+/* Text Box Styling */
+.text-box {
+  border: 1px solid green;
+  background-color: rgba(186, 203, 173, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  color: #000;
+  max-width: 300px;
+  width: 100%; /* Make it responsive */
+  margin: 10px 0;
+}
+
+/* Typography inside Text Box */
+.text-box h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.text-box p {
+  font-size: 16px;
+}
+
+/* Icon Container Styling */
+.icon-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Wraps icons if there isn't enough space */
+  justify-content: center;
+}
+
+/* Icon Styling */
+.icon {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+.icon i {
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Responsive Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .contact-section {
+    justify-content: center; /* Center content on small screens */
+    height: auto; /* Adjust height */
+  }
+
+  .text-box {
+    text-align: center; /* Center-align the text */
+    padding: 15px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .icon-container {
+    gap: 10px; /* Reduce gap between icons */
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon i {
+    font-size: 24px; /* Reduce icon size for small screens */
+  }
+}

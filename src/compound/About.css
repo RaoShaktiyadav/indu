@@ -332,3 +332,46 @@ p {
     justify-content: space-evenly;
   }
 }
+/* Reset and Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Healthcare Banner Section */
+.healthcare-banner {
+  position: relative;
+  height: 400px;
+  background: url('https://www.fortishealthcare.com/drupal-data/styles/banner_image/azblob/2023-03/New-Web-Banner-04.jpg?itok=rG52cxTp') no-repeat center center;
+  background-size: cover;
+  filter: brightness(0.9) blur(1px); /* Mimic the blurred effect */
+}
+
+/* Overlay Text Styling */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overlay h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 18px;
+  color: #555;
+}

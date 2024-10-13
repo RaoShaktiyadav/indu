@@ -30,6 +30,14 @@ const About = () => {
       ];
   return (
     <div className="about-container">
+
+<section className="healthcare-banner">
+      <div className="overlay">
+        <h1>Your Health, Our Priority</h1>
+        <p>Comprehensive care for you and your family</p>
+      </div>
+    </section>
+
       <section className="about-us">
         <h1>About Our Hospital</h1>
         <p>

@@ -11,6 +11,28 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
+
+<section className="contact-section">
+      <div className="text-box">
+        <h1>Contact us</h1>
+        <p>For all types of queries</p>
+      </div>
+
+      <div className="icon-container">
+        <div className="icon">
+          <i className="fas fa-at"></i> {/* At symbol icon */}
+        </div>
+        <div className="icon">
+          <i className="fas fa-envelope"></i> {/* Email icon */}
+        </div>
+        <div className="icon">
+          <i className="fas fa-phone-alt"></i> {/* Phone icon */}
+        </div>
+      </div>
+    </section>
+  
+
+
       <section className="contact-form-section">
         <h1>Contact Us</h1>
         <form onSubmit={handleSubmit} className="contact-form">

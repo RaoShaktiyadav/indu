@@ -124,21 +124,23 @@
 /* Background Banner Section */
 .banner {
   position: relative;
-  background-image: url('./img/sbg1.jpg'); /* You can add the image path here */
+  background-image: url('./img/sbg1.jpg'); /* Add your image path */
   background-size: cover;
   background-position: center;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
+/* Banner Overlay */
 .overlay {
   background-color: rgba(116, 111, 111, 0.5);
   color: white;
   padding: 20px;
   text-align: center;
-  border-radius: 5cap 5cap 1cap 5cap;
+  border-radius: 8px;
 }
 
 .overlay h1 {
@@ -157,59 +159,102 @@
   justify-content: space-around;
   padding: 30px;
   background-color: #f9f9f9;
+  flex-wrap: wrap; /* Makes the stats section responsive */
+  gap: 20px;
 }
 
+/* Individual Stat Box */
 .stat-box {
-
   border-radius: 10px;
   padding: 20px;
-margin: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 20%;
+  width: 22%; /* Adjust width for desktop */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
+/* Stat Titles */
 .stat-box h3 {
   font-size: 24px;
-  margin: 0% 0% 0% 30%;
-  width: 100%;
+  margin-bottom: 8px;
 }
 
 .stat-box p {
-  margin: 0% 0% 0% 30%;
- width: 100%;
+  font-size: 16px;
   color: #777;
 }
-.hos{
-  border: 1px solid rgba(221, 191, 39, 0.707) ;
-  background-color: rgba(212, 208, 191, 0.319);
+
+/* Icon Styles for Each Box */
+.hos, .doc, .bad, .noi {
+  border: 1px solid;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(212, 208, 191, 0.2);
 }
-.hos img{
- margin: 40%;
- width:100%;
+
+.hos {
+  border-color: rgba(221, 191, 39, 0.7);
 }
-.doc{
-  border: 1px solid rgba(179, 39, 221, 0.707) ;
-  background-color: rgba(198, 156, 212, 0.319);
+
+.doc {
+  border-color: rgba(179, 39, 221, 0.7);
 }
-.doc img{
- margin: 40%;
- width:100%;
+
+.bad {
+  border-color: rgba(0, 147, 238, 0.7);
 }
-.bad{
-  border: 1px solid rgba(0, 147, 238, 0.707) ;
-  background-color: rgba(176, 223, 230, 0.383);
+
+.noi {
+  border-color: rgba(12, 238, 0, 0.7);
 }
-.bad img{
- margin: 40%;
- width:100%;
+
+/* Icon Image Styling */
+.hos img, .doc img, .bad img, .noi img {
+  width: 50%; /* Adjust for better scaling */
+  margin: auto;
+  display: block;
 }
-.noi{
-  border: 1px solid rgba(12, 238, 0, 0.707) ;
-  background-color: rgba(186, 230, 176, 0.383);
+
+/* Responsive Media Queries */
+
+/* For Tablets */
+@media (max-width: 768px) {
+  .stats-container {
+    justify-content: center; /* Center the stat boxes */
+  }
+
+  .stat-box {
+    width: 45%; /* Adjust width for tablets */
+    margin-bottom: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 28px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
 }
-.noi img{
- margin: 40%;
- width:100%;
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .stat-box {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 15px;
+  }
+
+  .overlay h1 {
+    font-size: 24px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .hos img, .doc img, .bad img, .noi img {
+    width: 80%; /* Adjust icon size for mobile */
+  }
 }
