@@ -1,0 +1,215 @@
+/* Base styles for services section */
+.services-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.service-card span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Base styles for appointment form */
+.appointment-form {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.appointment-form h2 {
+  margin-bottom: 20px;
+}
+
+.appointment-form input, 
+.appointment-form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.appointment-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.appointment-form button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Styles */
+
+/* Small screens and mobile devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-form {
+    padding: 15px;
+  }
+
+  .appointment-form input, 
+  .appointment-form select {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .appointment-form button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium screens and tablets (max-width: 900px) */
+@media only screen and (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .appointment-form {
+    padding: 20px;
+  }
+
+  .appointment-form input, 
+  .appointment-form select {
+    padding: 9px;
+  }
+}
+/* HealthcareSection.css */
+
+.healthcare-section {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Background Banner Section */
+.banner {
+  position: relative;
+  background-image: url('./img/sbg1.jpg'); /* You can add the image path here */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(116, 111, 111, 0.5);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5cap 5cap 1cap 5cap;
+}
+
+.overlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Statistics Section */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.stat-box {
+
+  border-radius: 10px;
+  padding: 20px;
+margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+}
+
+.stat-box h3 {
+  font-size: 24px;
+  margin: 0% 0% 0% 30%;
+  width: 100%;
+}
+
+.stat-box p {
+  margin: 0% 0% 0% 30%;
+ width: 100%;
+  color: #777;
+}
+.hos{
+  border: 1px solid rgba(221, 191, 39, 0.707) ;
+  background-color: rgba(212, 208, 191, 0.319);
+}
+.hos img{
+ margin: 40%;
+ width:100%;
+}
+.doc{
+  border: 1px solid rgba(179, 39, 221, 0.707) ;
+  background-color: rgba(198, 156, 212, 0.319);
+}
+.doc img{
+ margin: 40%;
+ width:100%;
+}
+.bad{
+  border: 1px solid rgba(0, 147, 238, 0.707) ;
+  background-color: rgba(176, 223, 230, 0.383);
+}
+.bad img{
+ margin: 40%;
+ width:100%;
+}
+.noi{
+  border: 1px solid rgba(12, 238, 0, 0.707) ;
+  background-color: rgba(186, 230, 176, 0.383);
+}
+.noi img{
+ margin: 40%;
+ width:100%;
+}

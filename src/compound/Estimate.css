@@ -1,0 +1,87 @@
+/* Base styles for cost estimator */
+.cost-estimator {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .cost-estimator h2 {
+    margin-bottom: 20px;
+  }
+  
+  .cost-estimator select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .cost-estimator button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .cost-estimator button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cost-estimator p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Small screens and mobile devices (max-width: 600px) */
+  @media only screen and (max-width: 600px) {
+    .cost-estimator {
+      padding: 15px;
+    }
+  
+    .cost-estimator select {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .cost-estimator button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .cost-estimator p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Medium screens and tablets (max-width: 900px) */
+  @media only screen and (max-width: 900px) {
+    .cost-estimator {
+      padding: 20px;
+    }
+  
+    .cost-estimator select {
+      padding: 9px;
+    }
+  
+    .cost-estimator button {
+      padding: 9px 18px;
+    }
+  
+    .cost-estimator p {
+      font-size: 1.05rem;
+    }
+  }
+  

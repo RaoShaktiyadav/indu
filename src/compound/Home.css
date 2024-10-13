@@ -1,0 +1,240 @@
+/* Home.css */
+.home-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  span{
+    font-size: xx-large;
+  }
+  
+  .hero-section {
+    background-image: url("./img/hos.webp");
+    background-repeat: no-repeat;
+   background-size: cover;
+  
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5em;
+  }
+  
+  .hero-section p {
+    font-size: 1.2em;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .cta-button:hover {
+    background-color: #d3d1d1;
+  }
+  
+  .about-section, .services-section, .doctors-section, .contact-section {
+    margin: 50px 0;
+  }
+  
+  .about-section p, .services-section p, .doctors-section p, .contact-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 30%;
+    border-radius: 8px;
+  }
+  
+  .view-all, .learn-more, .meet-doctors, .contact-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2em;
+    }
+  
+    .services-list {
+      flex-direction: column;
+    }
+  
+    .service-item {
+      flex-basis: 100%;
+    }
+  }
+
+  /* General Styles */
+.news-updates {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .news-updates h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .news-updates ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .news-updates li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .news-updates li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-updates a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .news-updates h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .news-updates p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .news-updates a:hover h4 {
+    color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .news-updates ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .news-updates li {
+      flex: 0 0 48%; /* Two items per row on tablet and above */
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .news-updates ul {
+      justify-content: space-evenly;
+    }
+  
+    .news-updates li {
+      flex: 0 0 30%; /* Three items per row on larger screens */
+    }
+  
+    .news-updates h2 {
+      font-size: 36px;
+    }
+  
+    .news-updates h4 {
+      font-size: 26px;
+    }
+  
+    .news-updates p {
+      font-size: 18px;
+    }
+  }
+  /* General Styles */
+.awards {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .awards h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .awards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .awards-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .awards-grid img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .awards-grid {
+      justify-content: space-around;
+    }
+  
+    .awards-grid img {
+      flex: 0 0 45%; /* Two images per row on tablet */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .awards-grid img {
+      flex: 0 0 30%; /* Three images per row on larger screens */
+    }
+  
+    .awards h2 {
+      font-size: 36px;
+    }
+  }
+  
+  

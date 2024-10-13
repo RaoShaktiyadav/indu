@@ -1,0 +1,334 @@
+/* About.css */
+.about-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-us {
+    margin-bottom: 40px;
+  }
+  
+  .about-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .mission-values {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .mission-values h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .mission-values-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .mission-values-content .mission, .mission-values-content .values {
+    width: 45%;
+  }
+  
+  .mission-values-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .mission-values-content p, .mission-values-content ul {
+    font-size: 18px;
+  }
+  
+  .mission-values-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mission-values-content ul li {
+    margin: 5px 0;
+  }
+  
+  .our-team {
+    padding: 30px;
+  }
+  
+  .our-team h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .team-member {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .mission-values-content {
+      flex-direction: column;
+    }
+  
+    .mission-values-content .mission, .mission-values-content .values {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .team-grid {
+      flex-direction: column;
+    }
+  }
+  
+
+
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #343434;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+p {
+  color: #575757;
+}
+
+/* History & Milestones Section */
+.history-milestones {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.history-milestones ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-milestones li {
+  padding: 15px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.history-milestones li:last-child {
+  border-bottom: none;
+}
+
+/* Accreditations Section */
+.accreditations {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.certifications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certifications-grid img {
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Patient Stories Section */
+.patient-stories {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.stories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.story-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.story-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Community Outreach Section */
+.community-outreach {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.community-outreach ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Partnerships Section */
+.partnerships {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.partners-logos img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Hospital Stats Section */
+.hospital-stats {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stat-item {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* Future Plans Section */
+.future-plans {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .history-milestones ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certifications-grid {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .patient-stories .stories-grid {
+    justify-content: space-between;
+  }
+
+  .community-outreach ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partnerships .partners-logos {
+    justify-content: space-between;
+  }
+
+  .hospital-stats .stats-grid {
+    justify-content: space-between;
+  }
+
+  .future-plans {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .history-milestones ul {
+    flex-direction: row;
+  }
+
+  .patient-stories .stories-grid {
+    justify-content: space-evenly;
+  }
+
+  .hospital-stats .stats-grid {
+    justify-content: space-evenly;
+  }
+}
