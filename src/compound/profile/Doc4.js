@@ -48,7 +48,7 @@ const Doc4 = () => {
             Director, National Diabetes Obesity and Cholesterol Foundation (NDOC). President, Diabetes
             Foundation (India). Former Professor (Medicine), AIIMS, New Delhi. Major Achievements:
           </p>
-          <a >Read More</a>
+          <button>Read More</button>
         </section>
 
         <section className="awards">
