@@ -6,7 +6,16 @@ import Home from './compound/Home';
 import Services from './compound/Services';
 import About from './compound/About';
 import Contact from './compound/Contact';
+import Team from './compound/Team';
 import FAQ from './compound/FAQ';
+import Doc1 from './compound/profile/Doc1';
+import Doc2 from './compound/profile/Doc2';
+import Doc3 from './compound/profile/Doc3';
+import Doc4 from './compound/profile/Doc4';
+import Doc5 from './compound/profile/Doc5';
+import Doc6 from './compound/profile/Doc6';
+import Ns1 from './compound/Ns1';
+import Ns2 from './compound/Ns2';
 
 
 
@@ -32,6 +41,7 @@ const App = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/services">Services</Link></li>
+          <li><Link to="/team">Team</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/faq">FAQ</Link></li>
           
@@ -43,7 +53,17 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/doc1" element={<Doc1 />} />
+          <Route path="/doc2" element={<Doc2 />} /> 
+          <Route path="/doc3" element={<Doc3 />} /> 
+          <Route path="/doc4" element={<Doc4 />} /> 
+          <Route path="/doc5" element={<Doc5 />} /> 
+          <Route path="/doc6" element={<Doc6 />} />
+          <Route path="/ns1" element={<Ns1 />} /> 
+          <Route path="/ns2" element={<Ns2 />} /> 
+      
         </Routes>
       </div>
     </Router>

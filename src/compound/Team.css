@@ -1,0 +1,98 @@
+.doctor-profiles-section {
+    display: grid;
+    gap: 20px;
+    padding: 140px;
+    justify-content: center;
+  }
+  
+  /* Three columns on large screens */
+  @media (min-width: 1024px) {
+    .doctor-profiles-section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Two columns on tablets */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .doctor-profiles-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* One column on mobile */
+  @media (max-width: 767px) {
+    .doctor-profiles-section {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .doctor-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .position {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .specialties {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .expertise {
+    margin-bottom: 10px;
+  }
+  
+  .expertise-item {
+    background-color: #f3f3f3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 0.85em;
+  }
+  
+  .details {
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .actions .view-profile, .actions .book-appointment {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .actions .view-profile {
+    background-color: #f3f3f3;
+    color: black;
+  }
+  
+  .actions .book-appointment {
+    background-color: #fdd5cb;
+    color: #d95d39;
+  }
+  
+  .actions .book-appointment:hover {
+    background-color: #f5b7a7;
+  }
+  

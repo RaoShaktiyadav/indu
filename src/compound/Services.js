@@ -3,6 +3,7 @@ import React from 'react';
  import { useState } from 'react';
 import './Services.css';
 import Footer from './Footer';
+import Ns1 from './Ns1';
 import Estimate from './Estimate';
 import si1 from './img/Group 22867_0.svg'
 import si2 from './img/bad.svg'
@@ -132,7 +133,7 @@ const Services = () => {
       </div>
     </div>
 
-    
+    <Ns1/>
     
       
       <form className="appointment-form" onSubmit={handleSubmit}>
