@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
 
 const services = [
-  { id: 1, name: '24 HRS. PHARMACY', description: 'Round-the-clock pharmacy service.', icon: '💊' },
+  { id: 1, name: '24 HRS. PHARMACY', description: 'Round-the-clock pharmacy service.', icon: '💊', },
   { id: 2, name: 'LABORATORY', description: 'Comprehensive diagnostic testing facilities.', icon: '🔬' },
   { id: 3, name: 'OPERATION THEATRE', description: 'State-of-the-art surgical operations.', icon: '🛏️' },
   { id: 4, name: 'NICU', description: 'Newborn Intensive Care Unit.', icon: '👶' },
@@ -18,7 +18,7 @@ const ServiceCard1 = ({ id, name, description, icon }) => (
     <span>{icon}</span>
     <h3>{name}</h3>
     <p>{description}</p>
-    <Link to={`/services/${id}`} className="read-more-link">Read More</Link> {/* Add Read More Link */}
+    <Link to={`/services/${id}`} className="read-more-link">Read More</Link> {/* Read More Link */}
   </div>
 );
 
@@ -31,9 +31,11 @@ const Ns1 = () => {
           <ServiceCard1 key={service.id} id={service.id} name={service.name} description={service.description} icon={service.icon} />
         ))}
       </div>
+      <Link to="/ns2" className="link-to-ns2">Go to Ns2</Link> {/* Link to Ns2 */}
     </div>
   );
 };
 
 export default Ns1;
+
 

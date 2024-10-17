@@ -15,7 +15,7 @@ import Doc4 from './compound/profile/Doc4';
 import Doc5 from './compound/profile/Doc5';
 import Doc6 from './compound/profile/Doc6';
 import Ns1 from './compound/Ns1';
-import Ns2 from './compound/Ns2';
+import ServiceDetail from './compound/ServiceDetail';
 
 
 
@@ -61,8 +61,9 @@ const App = () => {
           <Route path="/doc4" element={<Doc4 />} /> 
           <Route path="/doc5" element={<Doc5 />} /> 
           <Route path="/doc6" element={<Doc6 />} />
-          <Route path="/ns1" element={<Ns1 />} /> 
-          <Route path="/ns2" element={<Ns2 />} /> 
+          <Route path="/" element={<Ns1 />} /> {/* Home page with services list */}
+          <Route path="/services/:id" element={<ServiceDetail />} /> {/* Service details page */}
+          
       
         </Routes>
       </div>
