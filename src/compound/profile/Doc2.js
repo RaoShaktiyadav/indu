@@ -13,7 +13,7 @@ const doctorData = {
 
 const Doc2 = () => {
   return (
-    <div>
+    <div className='dmain'>
     <div className="doctor-profile-horizontal">
       <div className="left-section">
         <img src={doctorData.imageUrl} alt={doctorData.name} className="doctor-image" />

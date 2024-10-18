@@ -11,9 +11,10 @@ import si3 from './img/doct.svg'
 
 const services = [
   { id: 1, name: 'Cardiology', description: 'Heart care and treatment.', icon: '❤️' },
-  { id: 2, name: 'Neurology', description: 'Brain and nervous system treatments.', icon: '🧠' },
+  { id: 2, name: 'Physiotherapy', description: 'Comprehensive physiotherapy services for rehabilitation.', icon: '🏋️' },
   { id: 3, name: 'Orthopedics', description: 'Bone and muscle treatments.', icon: '🦴' },
   { id: 4, name: 'Emergency Care', description: '24/7 emergency services.', icon: '🚑' },
+   
   ];
 const ServiceCard = ({ name, description, icon }) => (
   <div className="service-card">
