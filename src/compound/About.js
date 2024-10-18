@@ -2,7 +2,6 @@
 import React from 'react';
 import './About.css';
 import Footer from './Footer';
-import doc from './img/doc.webp'
 import cert from './img/certi.jpg'
 
 const About = () => {
