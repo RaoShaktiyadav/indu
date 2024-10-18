@@ -66,27 +66,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="our-team">
-        <h2>Meet Our Team</h2>
-        <div className="team-grid">
-          <div className="team-member">
-            <img src={doc} alt="Dr. Smith" />
-            <h3>Dr. John Smith</h3>
-            <p>Chief Surgeon</p>
-          </div>
-          <div className="team-member">
-            <img src={doc} alt="Dr. Jane Doe" />
-            <h3>Dr. Jane Doe</h3>
-            <p>Pediatrician</p>
-          </div>
-          <div className="team-member">
-            <img src={doc} alt="Dr. Emily Lee" />
-            <h3>Dr. Emily Lee</h3>
-            <p>Cardiologist</p>
-          </div>
-        </div>
-      </section>
-
+      
  
 <section className="history-milestones">
   <h2>Our History & Milestones</h2>

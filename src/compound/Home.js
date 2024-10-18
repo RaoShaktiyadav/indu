@@ -56,7 +56,7 @@ const Home = () => {
       <section className="doctors-section">
         <h2>Meet Our Doctors</h2>
         <p>Our team of doctors are leaders in their fields, providing top-notch care.</p>
-        <Link to="/doctors" className="meet-doctors">Meet Our Doctors</Link>
+        <Link to="/team" className="meet-doctors">Meet Our Doctors</Link>
       </section>
 
     
