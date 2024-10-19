@@ -1,12 +1,17 @@
 // Footer.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from "./img/logo.png"
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
+      <div className="social-icons">
+           <img src={logo} alt='logo'/>
+          
+        </div>
         <div className="footer-section quick-links">
           <h3>Quick Links</h3>
           <ul>
@@ -19,25 +24,13 @@ const Footer = () => {
 
         <div className="footer-section contact-info">
           <h3>Contact Info</h3>
-          <p><strong>Address:</strong> 123 Health St, Medical City, USA</p>
-          <p><strong>Phone:</strong> +1 123 456 7890</p>
-          <p><strong>Email:</strong> contact@hospital.com</p>
+          <p><strong>Address:</strong> NH 48, near cng pump, Neemrana, Rajasthan 301705</p>
+          <p><strong>Phone:</strong> 01494-246400,  7426982628</p>
+          <p><strong>Email:</strong> induhospitalneemrana@gmail.com</p>
         </div>
 
-        <div className="footer-section social-media">
-          <h3>Follow Us</h3>
-          <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
+        
+          
       </div>
 
       <div className="footer-bottom">

@@ -1,0 +1,84 @@
+/* Default Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e6e6e6; /* Default color */
+    color: rgb(225, 220, 220);
+    padding: 0 10%;
+  }
+  
+  .navbar-red {
+    background-color: red; /* Red color for /services page */
+  }
+  
+  .navbar-blue {
+    background-color: blue; /* Blue color for /about page */
+  }
+  
+  /* Brand logo */
+  .navbar-brand img {
+    width: 10%;
+    border-radius: 50%;
+  }
+  
+  /* Navbar links */
+  .navbar-links ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-links ul li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .navbar-links ul li a:hover {
+    text-decoration: underline;
+    color: #3ec615;
+    font-weight: 800;
+  }
+  
+  /* Navbar toggle (hamburger) for mobile view */
+  .navbar-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-toggle {
+      display: block; /* Show the hamburger icon */
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #007bff;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .navbar-links ul {
+      flex-direction: column;
+    }
+  
+    .navbar-links ul li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  

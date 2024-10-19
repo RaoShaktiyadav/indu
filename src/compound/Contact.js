@@ -52,9 +52,9 @@ const Contact = () => {
       <section className="contact-info-section">
         <h2>Our Contact Information</h2>
         <div className="contact-info">
-          <p><strong>Address:</strong> 123 Health St, Medical City, USA</p>
-          <p><strong>Phone:</strong> +1 123 456 7890</p>
-          <p><strong>Email:</strong> contact@hospital.com</p>
+        <p><strong>Address:</strong> NH 48, near cng pump, Neemrana, Rajasthan 301705</p>
+          <p><strong>Phone:</strong> 01494-246400,  7426982628</p>
+          <p><strong>Email:</strong> induhospitalneemrana@gmail.com</p>
         </div>
       </section>
 
